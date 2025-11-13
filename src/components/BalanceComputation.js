@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
   Calculator,
-  DollarSign,
   TrendingUp,
   TrendingDown,
   AlertTriangle,
@@ -314,7 +313,7 @@ const BalanceComputation = () => {
                 <div className="form-group">
                   <label htmlFor="amount">Amount</label>
                   <div className="input-wrapper">
-                    <DollarSign size={16} className="input-icon" />
+                    <span className="naira-icon">₦</span>
                     <input
                       type="number"
                       id="amount"
@@ -336,8 +335,8 @@ const BalanceComputation = () => {
                     onChange={(e) => handleInputChange('type', e.target.value)}
                     className="form-select"
                   >
-                    <option value="payment">Payment (Reduces Balance)</option>
-                    <option value="recovery">Recovery (Increases Balance)</option>
+                    <option value="payment">Recovery (Reduces Balance)</option>
+                    <option value="recovery">Payment(Increases Balance)</option>
                   </select>
                 </div>
               </div>

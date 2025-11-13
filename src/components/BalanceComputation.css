@@ -119,6 +119,18 @@
   z-index: 1;
 }
 
+.naira-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+  z-index: 1;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+}
+
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;

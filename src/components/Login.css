@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  background: linear-gradient(135deg, #d0180e 0%, #b91c1c 100%);
+  background: #f8fafc;
   overflow: hidden;
 }
 
@@ -18,30 +18,38 @@
   z-index: 1;
 }
 
-.africa-pattern {
+.background-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.1;
-  background-image: 
-    radial-gradient(circle at 25% 25%, #ffffff 2px, transparent 2px),
-    radial-gradient(circle at 75% 75%, #ffffff 1px, transparent 1px);
-  background-size: 50px 50px, 30px 30px;
-  background-position: 0 0, 15px 15px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
 }
 
 .login-card {
   position: relative;
-  z-index: 2;
-  background: white;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
   border-radius: 16px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   padding: 32px 32px;
   width: 100%;
   max-width: 380px;
   margin: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .login-header {

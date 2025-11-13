@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Eye, EyeOff, User, Lock, UserCheck, Loader2 } from 'lucide-react';
 import ubaLogo from './uba logo.webp';
+import landingImage from './landing.jpg';
 import './Login.css';
 
 const Login = ({ onLogin }) => {
@@ -79,7 +80,8 @@ const Login = ({ onLogin }) => {
   return (
     <div className="login-container">
       <div className="login-background">
-        <div className="africa-pattern"></div>
+        <img src={landingImage} alt="Background" className="background-image" />
+        <div className="background-overlay"></div>
       </div>
       
       <div className="login-card">

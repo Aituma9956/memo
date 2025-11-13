@@ -66,7 +66,7 @@ const VerificationWorkflow = ({ user, selectedAccount, onBack }) => {
       description: 'Validate account information and supporting documents',
       icon: Shield,
       status: currentStep >= 1 ? 'current' : 'pending',
-      requiredRole: ['credit-admin', 'recovery-officer'],
+      requiredRole: ['Team Lead', ''],
       fields: ['verification', 'documentation', 'risk-assessment']
     },
     {
@@ -75,7 +75,7 @@ const VerificationWorkflow = ({ user, selectedAccount, onBack }) => {
       description: 'Senior approval for clearance or further action',
       icon: CheckCircle,
       status: currentStep >= 2 ? 'current' : 'pending',
-      requiredRole: ['credit-admin'],
+      requiredRole: ['Senior Officer'],
       fields: ['approval-decision', 'amount-adjustment', 'conditions']
     },
     {
